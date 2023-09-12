@@ -1,5 +1,5 @@
-#ifndef _SAMPLE_HEADER_
-#define _SAMPLE_HEADER_
+#ifndef _MAIN_H_
+#define _MAIN_H__
 
 int _putchar(char c)
 #endif
