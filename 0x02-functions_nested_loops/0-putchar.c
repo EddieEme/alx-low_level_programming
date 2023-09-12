@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 #include "main.h"
 /**
  * main - Entry point, print -putchar, followed by a new line
@@ -18,4 +18,8 @@ int main(void)
 	_putchar('\n');
 
 	return (0);
+}
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
 }
