@@ -1,11 +1,11 @@
-#include <unistd.h>
 #include "main.h"
 /**
- * main - Entry point, print -putchar, followed by a new line
+ * main - Entry pont, print -putchar, followed by a new line
  *
- * Return: Always 0 (Success)
+ * Return: Always  (Success)
  */
 int main(void)
+
 {
 	_putchar('_');
 	_putchar('p');
@@ -16,10 +16,5 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
-
 	return (0);
-}
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
 }
