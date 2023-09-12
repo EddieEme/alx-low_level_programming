@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * time_table - function that prints the 9 times table, starting with 0
+ * times_table - function that prints the 9 times table, starting with 0
  * Redurn: Always 0 (success)
  */
-void time_table(void)
+void times_table(void)
 {
 	int row, column, product;
 
