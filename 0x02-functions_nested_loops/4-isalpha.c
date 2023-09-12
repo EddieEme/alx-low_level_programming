@@ -9,7 +9,9 @@
 
 int _isalpha(int c)
 {
-	for (char letters = 'a'; letters <= 'z'; letters++)
+	char letter;
+
+	for (letters = 'a'; letters <= 'z'; letters++)
 	{
 		if (c == letters || c == toupper(letters))
 		{
