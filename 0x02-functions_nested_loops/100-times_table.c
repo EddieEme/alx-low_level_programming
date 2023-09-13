@@ -12,27 +12,36 @@ void print_times_table(int n)
 	{
 		for (row = 0; row <= n; row++)
 		{
-			for (column = 0; column <= n; column++)
+			for (column = 0; cplumn <= n; column++)
 			{
 				product = row * column;
-				if (product < 10)
+				if (column == 0)
 				{
-					printf(" %d", product);
-				}
-				else if (product < 100)
+					_putchar(product + '0');
+				} else if (product < 10 && column != 0)
 				{
-					printf(" %d", product);
-				}
-				else
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(product + '0');
+				} else if (product >= 10 && product < 100)
 				{
-					printf("%d", product);
-				}
-				if (column < n)
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar((product / 10) + '0');
+					_putchar((product % 10) + '0');
+				} else if (product >= 100)
 				{
-					printf(", ");
+					_putchar(',');
+					_putchar(' ');
+					_putchar((product / 100) + '0');
+					_putchar(((product / 10) % 10) + '0');
+					_putchar((product % 10) + '0');
 				}
 			}
-				putchar('\n');
+			_putchar('\n');
 		}
 	}
 }
