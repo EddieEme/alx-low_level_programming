@@ -17,7 +17,7 @@ void print_times_table(int n)
 				product = row * column;
 				if (product < 10)
 				{
-					printf("  %d", product);
+					printf(" %d", product);
 				}
 				else if (product < 100)
 				{
