@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-* print_line - print line
+* print_diagonal - print line
 * @n: a is first argument
 * Return: Always 0 (Success)
 */
