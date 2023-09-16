@@ -17,6 +17,6 @@ int main(void)
 			sum = sum + n;
 		}
 	}
-	printf("%lu\n", sum);
+	printf("%d\n", sum);
 	return (0);
 }
