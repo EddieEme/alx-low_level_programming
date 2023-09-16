@@ -10,7 +10,7 @@ int main(void)
 	int n;
 	int sum = 0;
 
-	for (n = 1; n < 10; n++)
+	for (n = 1; n < 1024; n++)
 	{
 		if (n % 3 == 0 || n % 5 == 0)
 		{
