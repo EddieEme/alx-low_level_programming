@@ -1,17 +1,32 @@
 #include "main.h"
 
 /**
- * puts2 - Function to print the characters
- *@s parameter 
- * Return: Nothing 
- */
+* puts2 - Function to print the characters
+* @str: parameter
+* Return: print
+*/
 void puts2(char *str)
 {
-	int i;
+int len, end, i;
 
-	for (i = 0; str[i] != '\0'; i += 2)
+	*str = str;
+	len = 0;
+	end = 0;
+
+	while (*str != '\0')
 	{
-		_putchar(str[i]);
+		str++;
+		len++;
 	}
-	_putchar('\n');
+
+	end = len - 1;
+	for (i = 0; i <= end; i++)
+	{
+		if (i % 2 == 0)
+		{
+			putchar(str[i]);
+		}
+	}
+	putchar('\n');
+ 
 }
