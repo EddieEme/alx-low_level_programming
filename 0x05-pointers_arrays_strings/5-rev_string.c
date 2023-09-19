@@ -3,8 +3,8 @@
 
 /**
  * rev_string - Function to print reversed string
- *@s: parameter 
- *Return: Nothing 
+ * @s: parameter
+ * Return: Nothing
  */
 void rev_string(char *s)
 {
