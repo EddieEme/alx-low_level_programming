@@ -23,7 +23,7 @@ int _atoi(char *s)
 		}
 		else if (isdigit(s[i]))
 		{
-		result = result * 10 + (s[i] - '0');
+			result = result * 10 + (s[i] - '0');
 		}
 	}
 	return (result * sign);
