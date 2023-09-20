@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "main.h"
+#include <ctype.h>
 
 /**
  * _atoi - function that convert a string to an integer
@@ -20,7 +21,7 @@ int _atoi(char *s)
 		{
 			sign *= -1;
 		}
-		else if (s[i] == '+')
+		else if (isdigit(s[i]))
 		{
 			result = result * 10 + (s[i] + '0');
 		}
