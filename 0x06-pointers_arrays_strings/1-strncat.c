@@ -3,10 +3,11 @@
 #include <string.h>
 
 /**
-* _strncat - function that concatenates two strings
+* _strncat - Function that concatenates two strings
 * @dest: Destination
 * @src: source
 * @n: length
+* Return: 0
 */
 
 char *_strncat(char *dest, char *src, int n)
