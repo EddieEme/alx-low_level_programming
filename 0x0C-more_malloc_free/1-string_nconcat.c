@@ -30,6 +30,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	strcpy(new_str, s1);
 	strncpy(new_str + len_s1, s2, n);
-	new_str[len_s1 + n] = '\0';
+
 	return (new_str);
 }
