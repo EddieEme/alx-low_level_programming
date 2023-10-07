@@ -21,15 +21,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		n = len_s2;
 	}
-	else
-	{
-		new_str = (char *)malloc(len_s1 + n + 1);
+	new_str = (char *)malloc(len_s1 + n + 1);
 
-		if (new_str == NULL)
-		{
-			return (NULL);
-		}
+	if (new_str == NULL)
+	{
+		return (NULL);
 	}
+
 	strcpy(new_str, s1);
 	strncpy(new_str + len_s1, s2, n);
 	new_str[len_s1 + n] = '\0';
