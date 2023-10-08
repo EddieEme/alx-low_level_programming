@@ -1,11 +1,11 @@
 #include "main.h"
+
 /**
  * _calloc - function that allocates memory for an array, using malloc
  * @nmemb: parameter
  * @size: parameter
- * Return: Nothing 
- */
- 
+ * Return: Nothing
+*/
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int total_size = 0;
