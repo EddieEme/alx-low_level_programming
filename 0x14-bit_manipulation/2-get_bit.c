@@ -1,4 +1,4 @@
-#incude "main.h"
+#include "main.h"
 
 /**
   * get_bit - function that returns the value of a
