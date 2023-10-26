@@ -9,16 +9,15 @@
 
 void print_binary(unsigned long int n)
 {
-	int num_bits = sizeof(n) * 8;
 	int i, leading_zero = 1;
-	unsigned long int value = 1UL << (num_bits - 1);
+	unsigned long int value = 1UL << (31);
 
 	if (n == 0)
 	{
 		_putchar('0');
 		return;
 	}
-	for (i = 0; i < num_bits; i++)
+	for (i = 0; i < 32; i++)
 	{
 		if ((n & value) != 0)
 		{
