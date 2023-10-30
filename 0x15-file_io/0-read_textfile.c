@@ -14,37 +14,37 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	char *buffer;
 
 	if (filename == NULL)
-	{ 
+	{
 		return (0);
 	}
 	fp = open(filename, O_RDONLY);
-      	if (fp == -1)
-      	{
-	    	return(0);
-      	}
+	if (fp == -1)
+	{
+		return (0);
+	}
 	buffer = malloc(sizeof(char) * letters);
-      	if (buffer == NULL)
-      	{
-	    	close(fp);
-	    	return(0);
-      	}
-       	rd = read(fp, buffer, letters);
-       	if (rd == -1)
-      	{   
-	       	return(0);
-      	}
-      	wrt = write(STDOUT_FILENO, buffer, rd);
-     	if (wrt == -1)
-      	{
-	    	return(0);
-      	}
-      	if (rd != wrt)
-      	{
-	    	free(buffer);
-	    	close(fp);
-	    	return(0);
-      	}
-      	free(buffer);
+	if (buffer == NULL)
+	{
+		close(fp);
+		return (0);
+	}
+	rd = read(fp, buffer, letters);
+	if (rd == -1)
+	{
+		return (0);
+	}
+	wrt = write(STDOUT_FILENO, buffer, rd);
+	if (wrt == -1)
+	{
+		return (0);
+	}
+	if (rd != wrt)
+	{
+		free(buffer);
+		close(fp);
+		return (0);
+	}
+	free(buffer);
 	close(fp);
-      	return(wrt);
+	return (wrt);
 }
