@@ -5,7 +5,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 
-void file_status(int stat, int fd, char *filename, char mode);
+void file_status(int op_file, int fd, char *filename, char mode);
 /**
  * main - copy content of one file to another
  * @argc: argument count
