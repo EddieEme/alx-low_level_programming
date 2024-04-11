@@ -2,19 +2,6 @@
 
 int binary_search_helper(int *array, int value,
 			 size_t low, size_t high);
-/*size_t min(size_t a, size_t b);*/
-
-/**
- * min - returns the minimum of two size_t values
- * @a: first value
- * @b: second value
- *
- * Return: `a` if lower or equal to `b`, `b` otherwise
- */
-/*size_t min(size_t a, size_t b)
-{
-	return (a <= b ? a : b);
-}*/
 
 /**
  * binary_search_helper - searches for a value in an integer array using a
