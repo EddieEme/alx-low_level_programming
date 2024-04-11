@@ -2,7 +2,7 @@
 
 int binary_search_helper(int *array, int value,
 			 size_t low, size_t high);
-size_t min(size_t a, size_t b);
+/*size_t min(size_t a, size_t b);*/
 
 /**
  * min - returns the minimum of two size_t values
